@@ -30,7 +30,7 @@ Then compile the java program by typing: javac FinalGame.java
 Then in the command prompt type: appletviewer FinalGame.html
 In the folder there already exists a FinalGame.html file which is created from my java compiler so you would not need to create another.
 and after typing that command a window(applet) should pop displaying my splash screen.
-In the event that the .html file is not there click on the htmlTEXT link or use this: 
+In the event that the .html file is not there click on the htmlTEXT link or you can use this code:
 
 <html>
   <head>
