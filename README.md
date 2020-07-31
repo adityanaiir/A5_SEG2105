@@ -32,7 +32,7 @@ In the folder there already exists a FinalGame.html file which is created from m
 and after typing that command a window(applet) should pop displaying my splash screen.
 In the event that the .html file is not there then use this: 
 
-//<html>
+<html>
   <head>
     <title>
        The FinalGame applet
@@ -41,13 +41,13 @@ In the event that the .html file is not there then use this:
   <body>
     <h2>
       Here is the FinalGame applet
-    </h2>
+    <//////h2>
     <hr>
     <applet code="FinalGame.class" width="300" height="200">
     </applet>
     <hr>
   </body>
-//<html>
+</html>
 
 
 and save it as .html file in the same folder and compile it using the command that I mentioned above
