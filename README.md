@@ -41,7 +41,7 @@ In the event that the .html file is not there then use this:
   <body>
     <h2>
       Here is the FinalGame applet
-    <//////h2>
+    </h2>
     <hr>
     <applet code="FinalGame.class" width="300" height="200">
     </applet>
