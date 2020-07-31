@@ -1,0 +1,46 @@
+class Sokoban {
+  
+  SokobanGameStateMachin{
+    
+    SplashScreen{
+      entry/{System.out.println("Welcome to the Game. Click anywhere to start your game");} 
+      clickToStart -> IntroductionScreen;
+    }
+    
+    IntroductionScreen {
+      entry/{System.out.println("Introduction about the Theme of the Game");}
+      next -> InstructionScreen;
+    }
+    
+    InstructionScreen{
+      entry/{System.out.println("Your task is to push blocks to their specified area");}
+      next -> CharacterScreen;
+    }
+    
+    CharacterScreen{
+      entry/{System.out.println("Choose your character to play!");}
+      characterChosen -> GridScreen;
+    }
+    
+    GridScreen{
+      entry/{System.out.println("Welcome to the Game!");}
+      Level1{
+        entry/{System.out.println("Your task is to push blocks to their specified area");} ->Level2;
+      }
+      Level2{
+        entry/{System.out.println("Your task is to push blocks to their specified area");} ->Level3;
+      }
+      Level3{
+         entry/{System.out.println("Your task is to push blocks to their specified area");} ->Level4;
+      }
+      Level4{
+        entry/{System.out.println("Your task is to push blocks to their specified area");} ->Win;
+      }
+    }
+    
+    Win{
+      entry/{System.out.println("YOU WIN!");}
+    }
+   
+  }
+}
